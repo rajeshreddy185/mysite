@@ -1,0 +1,4 @@
+<h1>{{question.question_text}}</h1><br>
+{% for each in question.choice_set.all %}
+    {{each.choice_text}}--{{each.votes}}<br><br>
+{% endfor %}
